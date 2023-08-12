@@ -141,7 +141,7 @@ html {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   /* Put transition on original "state" */
-  transition: background-color 1s;
+  transition: all 1s; /* apply transition both background-color and box-shadow properties */
 }
 
 .btn--full:link,
@@ -168,10 +168,39 @@ html {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+
+  /* ! CAN NOT DO THIS, Whole element jumps by 1px*/
+  /* border-bottom: none; */
+
+  border-bottom: 1px solid transparent;
+}
+
+/* HELPER/SETTING CLASSES */
 .margin-right-sm {
-  margin-right: 1.6rem !important; /* helper class */
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
 }
 
 strong {
   font-weight: 500;
+}
+
+.center-text {
+  text-align: center;
 }
