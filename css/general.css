@@ -37,6 +37,7 @@ Paragraph default: 1.6
 
 --- 06 BORDER-RADIUS
 Default: 9px
+Medium: 11px
 
 --- 07 WHITESPACE
 
@@ -169,4 +170,8 @@ html {
 
 .margin-right-sm {
   margin-right: 1.6rem !important; /* helper class */
+}
+
+strong {
+  font-weight: 500;
 }
