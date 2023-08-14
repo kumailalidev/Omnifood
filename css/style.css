@@ -535,3 +535,11 @@
 .cta-form input::placeholder {
   color: #aaa;
 }
+
+/***********************/
+/* FOOTER SECTION */
+/***********************/
+
+.footer {
+  padding: 9.6rem;
+}
