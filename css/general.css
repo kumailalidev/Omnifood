@@ -16,6 +16,7 @@ Default: 1
 Small: 1.05
 Medium: 1.2
 Paragraph default: 1.6
+Large: 1.8
 
 - Letter Spacing
 -0.5px
@@ -243,7 +244,8 @@ having a link, i.e. href attribute
   font-size: 1.8rem;
   display: flex;
   align-items: center;
-  gap: 1.8rem;
+  gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
